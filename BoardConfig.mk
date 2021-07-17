@@ -60,6 +60,9 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 BOARD_INCLUDE_RECOVERY_DTBO := true
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := universal9610
+
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
@@ -118,9 +121,9 @@ TW_USE_NEW_MINADBD := true
 
 #SHRP_Variables
 BUILD_SHRP_REC := true
-SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
 SHRP_MAINTAINER := TenSeventy7
 SHRP_DEVICE_CODE := a50dd
+SHRP_PATH := device/samsung/$(SHRP_DEVICE_CODE)
 SHRP_EDL_MODE := 0
 SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
